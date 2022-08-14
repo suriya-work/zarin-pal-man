@@ -11,7 +11,7 @@ header {
   top: 0;
   transition: all 0.3s ease;
   /* font-family: sans-serif; */
-  font-family: YekanBalkhMedium;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -24,29 +24,28 @@ header {
   list-style: none;
 }
 
-/* .headerUl li a:Link {
-  color: #6f6c6c;
-} */
 
 
-.headerUl li {
+.headerUl li  {
   font-size: 15px;
   margin: 0 15px;
-  /* font-family: 'YekanBalkhMedium'; */
-  font-weight: 500;
+  font-weight: 700;
 }
 
-.headerUl li a:Link {
+.headerUl li a {
   cursor: pointer;
   text-decoration: none;
-  /* color: #3e3b3b; */
+  color: #3e3b3b;
   
 
 }
+.showLink {
+  color: #303030;
+}
 
 
-.headerUl > li:last-child a:Link {
-  /* color: #28457b; */
+.headerUl > li:last-child a {
+  color: #28457b;
   background-color: rgba(232, 239, 254, 0.6);
   border-radius: 20px;
   padding: 10px 27px;
@@ -57,7 +56,7 @@ header {
 
 }
 
-.headerUl>li:last-child a:Link:hover {
+.headerUl>li:last-child a:hover {
   background-color: #fbf6d9;
 }
 
@@ -179,7 +178,7 @@ header {
   color: black;
 }
 
-.showUl li a:Link {
+.showUl li a {
   color: #303030;
 }
 
@@ -187,7 +186,7 @@ header {
   background-color: rgba(232, 239, 254, 0.6);
 }
 
-.productMore  a:Link:hover {
+.productMore  a:hover {
   background-color: rgba(232, 239, 254, 0.6);
   border-radius: 5px;
 
@@ -198,7 +197,7 @@ header {
   font-size: 14px;
   font-weight: 500;
   color: #303030;
-  line-height: 1.1;
+  line-height: .5;
 }
 
 /* #show-product-menu {
@@ -219,17 +218,19 @@ header {
   margin-top: 23px;
 }
 
-.productMore a:Link p:first-child {
+.productMore a p:first-child {
   color: #000;
   font-size: 0.95rem;
+  font-weight: 700;
+
 }
 
-.productMore a:Link p:last-child {
+.productMore a p:last-child {
   color: #000;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
-.productMore a:Link {
+.productMore a {
   margin: 10px;
   display: block;
   padding: 10px;

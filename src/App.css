@@ -6,7 +6,14 @@
 
 
 .App {
-    /* font-family: 'YekanBalkhMedium', 'IRANYekan' ,Arial, Helvetica, sans-serif; */
+    /* font-family: YekanBalkhMedium, IRANYekan ,Arial, Helvetica, sans-serif; */
     direction: rtl;
-}
+    /* font-family: "Roboto";  */
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 
+
+}
+body {
+    font-weight: bold;
+}
