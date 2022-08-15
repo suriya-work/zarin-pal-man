@@ -1,0 +1,17 @@
+.banner {
+    background-color: rgb(5, 5, 89);
+    border-radius: 10px;
+    width: 1170px;
+    margin: auto;
+    padding-top: 30px;
+    
+    /* right: 20%; */
+}
+
+.banner img {
+    background-size: cover;
+    width: 100%;
+
+
+
+}

@@ -3,16 +3,69 @@ body {
     font-family: 'Roboto', sans-serif;
 
 }
+
 .list {
     display: flex;
     justify-content: center;
     /* width: 900px; */
-    /* background: rgba(240, 248, 255, 0.932); */
+    background: rgba(249, 251, 251, 0.932);
     border-radius: 10px;
     /* overflow: hidden; */
     padding: 80px;
+    /* width: 970px; */
+    margin: auto;
 }
 
 .slider img {
     width: 500px;
+}
+
+.listlogin img {
+    width: 25%;
+
+}
+
+.listlogin button {
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+    width: 100px;
+    margin-right: 10rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(73, 74, 75);
+
+}
+
+.listText h4 {
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.listText p {
+    color: rgb(158, 160, 161);
+    font-size: 14px;
+}
+
+.listText input {
+    width: 80%;
+    border: 1px solid #303030;
+    padding: 10px;
+
+}
+
+.button {
+    padding-top: 30px;
+    position: absolute;
+    right: 35%;
+
+}
+
+.button button {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 33);
+    padding: 0 25px 10px;
+    font-weight: 700;
+    
 }
