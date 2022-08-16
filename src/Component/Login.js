@@ -11,6 +11,25 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Login = (props) => {
     const [isLoading, setIsLoading] = useState(false);
+    const [email, setEmail] = useState("");
+    const [masage, setMasage] = useState("");
+
+    const emailInvalidation = () => {
+        const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
+        if (regEx.test(email)) {
+            setMasage("")
+        } else if (!regEx.test(email) && email === "") {
+            setMasage("شماره همراه یا ایمیل الزامی است");
+        } else {
+            setMasage("");
+        }
+
+    }
+
+    const handelrOnchange = (e) => {
+        setEmail(e.target.value)
+
+    }
 
     useEffect(() => {
         setIsLoading(true)
@@ -38,11 +57,12 @@ const Login = (props) => {
                                             <p>
                                                 برای استفاده از خدمات زرین‌پال، وارد حساب کاربری خود شوید.در صورت نداشتن حساب کاربری ثبت‌‌نام کنید.
                                             </p>
-                                            <input type="text" placeholder='شماره همراه یا ایمیل' />
+                                            <input id='email' type="email" placeholder='شماره همراه یا ایمیل' value={email} onChange={handelrOnchange} />
+                                            <p className={styles.masage}>{masage}</p>
                                         </div>
 
                                         <div className={styles.button}>
-                                            <button>تایید و ادامه</button>
+                                            <button onClick={emailInvalidation}>تایید و ادامه</button>
                                         </div>
 
                                     </div>
@@ -56,14 +76,7 @@ const Login = (props) => {
                                     </div>
                                 </Col>
                             </Row>
-
-
                         </div>
-
-
-
-
-
                     </Container >
 
                 ) : (<Loading />)
